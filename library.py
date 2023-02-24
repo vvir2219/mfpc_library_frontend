@@ -1,22 +1,11 @@
 #!/usr/local/bin/python3
 
 import sys
-from member import member_menu, member_repr
+from member import member_menu
+from members import member_repr
+from librarian import librarian_menu
 from api import api_members
 
-# Librarian
-
-def librarian_menu():
-    pass
-
-# Member 
-# 
-# Capabilities:
-# - see available books
-# - search books by title/author
-# - borrow book (from search or available books)
-# - see all borrows
-# - return borrowed book
 
 # MAIN
 

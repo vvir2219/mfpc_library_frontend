@@ -11,7 +11,10 @@ def API(api_base):
     def post(route='', body={}):
         return requests.post(api_base + '/' + route, body)
 
-    return MicroMock(get=get, post=post)
+    def delete(route=''):
+        return requests.delete(api_base + '/' + route)
+
+    return MicroMock(get=get, post=post, delete=delete)
 
 base_url = 'http://localhost:3000/'
 
